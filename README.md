@@ -1,6 +1,6 @@
 # Cat vs Dog Classifier — CNN from Scratch (TensorFlow/Keras)
 
-A binary image classifier distinguishing cats from dogs, built as a learning project to understand core CNN concepts — kernels, convolution, ReLU, padding, stride, pooling, and data augmentation — through direct experimentation rather than just following a tutorial.
+A binary image classifier distinguishing cats from dogs, built as a learning project to understand core CNN concepts such as  kernels, convolution, ReLU, padding, stride, pooling, and data augmentation  through direct experimentation rather than just following a tutorial.
 
 Built with TensorFlow/Keras. Dataset: [Cat and Dog (Kaggle)](https://www.kaggle.com/datasets/tongpython/cat-and-dog).
 
@@ -65,7 +65,7 @@ cat-dog-cnn/
 
 ## Methodology notes
 
-- Dataset split: train/validation/test with validation held out specifically to guide experiment comparisons, keeping the test set untouched until final evaluation — avoiding indirect overfitting to test data through repeated experimentation.
+- Dataset split: train/validation/test with validation held out specifically to guide experiment comparisons, keeping the test set untouched until final evaluation, avoiding indirect overfitting to test data through repeated experimentation.
 - Early stopping (patience 3–5, restoring best weights) used throughout to compare each configuration at its best point rather than an arbitrary final epoch.
 - All training done on Google Colab (T4 GPU).
 
@@ -73,7 +73,6 @@ cat-dog-cnn/
 
 - Each experiment is a single training run; small differences (e.g. padding same vs valid, within ~1 point) are within normal run-to-run variance from random weight initialization rather than necessarily meaningful effects. Only the augmentation result (a ~5-6 point jump) is large enough to be a confident finding.
 - No cross-validation was used, due to time/compute constraints.
-- Per course structure, Dense layer theory was intentionally not covered in depth yet — a single-neuron output layer was used as the minimum necessary classifier head, with GlobalAveragePooling explored separately as a Dense-minimizing alternative.
 
 ## Running it
 
