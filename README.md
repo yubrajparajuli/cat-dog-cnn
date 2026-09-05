@@ -4,6 +4,8 @@ A binary image classifier distinguishing cats from dogs, built as a learning pro
 
 Built with TensorFlow/Keras. Dataset: [Cat and Dog (Kaggle)](https://www.kaggle.com/datasets/tongpython/cat-and-dog).
 
+📖 Read the full writeup on [Medium](https://medium.com/@yubrajparajuli/7-changes-1-winner-what-actually-fixes-an-overfitting-cnn-7b2cb208932b)
+
 ## Key finding
 
 **Data augmentation was the single most impactful change tested.** A baseline model overfit badly (96% train accuracy vs ~75% validation accuracy, with validation loss climbing after epoch 5). Adding augmentation alone closed most of that gap and pushed validation accuracy to ~82%, confirmed by a final unbiased test accuracy of **83.44%**.
